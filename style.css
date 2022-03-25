@@ -1,0 +1,25 @@
+#container {
+    display:flex;
+    flex: 1;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+button {
+    width: 100px;
+    height: 80px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#display {
+    font-size: 48px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}

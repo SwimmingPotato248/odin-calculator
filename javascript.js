@@ -26,3 +26,9 @@ function operate(a, b, operation) {
             return divine(a, b);
     }
 }
+
+let displayValue = "";
+
+function updateDisplay() {
+    document.getElementById("display").textContent = displayValue;
+}
