@@ -54,11 +54,11 @@ operators.forEach(e => {
 })
 
 function equal() {
-    if (currentTotal === 0 || currentOperator === "") {
+    if (currentTotal === 0) {
         currentTotal = parseInt(currentNum);
     } else if (currentNum !== "" && currentOperator !== "") {
         currentTotal = operate(currentTotal, currentNum, currentOperator);
-        }
+        } else if (currentOperator === "" && currentNum !== "") currentTotal = parseInt(currentNum);
     currentNum = "";
     updateDisplay(currentTotal);
 }
